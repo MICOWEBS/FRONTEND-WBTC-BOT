@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-card p-4 transition-all duration-200;
+  }
+  
+  .signal-card {
+    @apply card flex flex-col items-center justify-center gap-2 p-6;
+  }
+  
+  .metric-card {
+    @apply card flex flex-col gap-1;
+  }
+  
+  .metric-title {
+    @apply text-sm text-gray-500 font-medium;
+  }
+  
+  .metric-value {
+    @apply text-xl font-semibold;
+  }
+  
+  .signal-buy {
+    @apply bg-green-50 border-l-4 border-signal-buy text-signal-buy;
+  }
+  
+  .signal-sell {
+    @apply bg-red-50 border-l-4 border-signal-sell text-signal-sell;
+  }
+  
+  .signal-wait {
+    @apply bg-gray-50 border-l-4 border-signal-wait text-signal-wait;
+  }
+} 
