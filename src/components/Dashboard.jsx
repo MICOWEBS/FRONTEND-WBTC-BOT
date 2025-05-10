@@ -1,5 +1,6 @@
+// Fixed ESLint error - removed unused Trending import
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { Activity, RefreshCw, AlertTriangle, Trending, TrendingUp, TrendingDown, Send, TrendingUp as PerformanceIcon, BarChart2, Layers } from 'react-feather';
+import { Activity, RefreshCw, AlertTriangle, TrendingUp, TrendingDown, Send, TrendingUp as PerformanceIcon, BarChart2, Layers } from 'react-feather';
 import SignalCard from './SignalCard';
 import MetricCard from './MetricCard';
 import SignalHistoryCard from './SignalHistoryCard';
